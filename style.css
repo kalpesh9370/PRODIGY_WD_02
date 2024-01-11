@@ -1,34 +1,47 @@
 body{
-    background: #929193;
+    background: #232323;
+    background-image: url("./img/4.jpg");
+    background-size:100%;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    align-items: center;
-
-    
-
+    align-items: center; 
 }
+.image{
+    z-index: -10px;
+    width:100%
+    
+}
+.h1{
+    color: #fff;
+}
+
 
 .stopwatch{
     width:90%;
     display: flex;
     flex-direction: column;
     max-width:600px;
-    background-color:rgb(82, 80, 80);
-    background-size: cover;
-    background-position: center;
+    background-color:rgb(20, 20, 20);
+    /* background-size: cover;
+    background-position: center; */
     text-align: center;
     padding:40px 0;
     color:#fff;
-    border-radius: 15px;
-   /* margin:50px; */
-    box-shadow:0 10px 10px rgb(47, 45, 45);
+    /* border-radius: 15px; */
+   margin-top:50px;
+    /* box-shadow:0 10px 10px rgb(47, 45, 45); */
     align-items: center;
+    opacity: 0.7;
     
 }
-
+#displayTime{
+    opacity:1;
+}
 .stopwatch h1{
     margin-top: 60px;
     font-size: 84px;
@@ -39,16 +52,20 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    opacity:1;
 }
 button{
+    
     padding: 5px 10px;
-    border-radius: 10px;
+    /* border-radius: 5px; */
     box-shadow: none;
-    background-color: #89888b;
-    color:#fff;
-    border-color: #fff;
+    background: solid;
+    background-color: #000000;
+    color:#fffcfc;
+    border-color: #faf8f8;
     font-weight:200;
     font-size: medium;
+   
 }
 
 #laps{
@@ -58,17 +75,19 @@ button{
     display: flex;
     flex-direction: column;
     max-width:600px;
-   
+   font-size: 25px;
+   font-weight: 600;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
     background-size: cover;
     background-position: center;
     text-align: center;
     padding:40px 0;
     color:black;
-    border-radius: 15px;
-    /* margin: 0px 0px 250px 250px; */
-    box-shadow:0 10px 10px rgb(47, 45, 45);
+    
     align-items: center;
+    opacity: 0.7;
 }
 #lapRecord{
     color:black
 }
+

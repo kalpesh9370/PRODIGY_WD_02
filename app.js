@@ -20,50 +20,44 @@
                     minutes=0;
                     hours++;
                 }
- 
             }
-
                 let h=hours<10 ? "0" + hours:hours;
                 let m=minutes<10 ? "0" + minutes:minutes;
                  let s=seconds<10 ? "0" + seconds:seconds;
-
-      
-
-           displayTime.innerHTML= h+":"+ m +":"+ s;
-          
+       displayTime.innerHTML= h+":"+ m +":"+ s;    
         }
 
-
-       
-        function watchStart(){
+function watchStart(){
             if(timer!== null)
             {
                 clearInterval(timer);
             }
             timer=setInterval(stopWatch,1000);
+}
 
-        }
-
-        function watchStop(){
+function watchStop(){
             clearInterval(timer);
-        }
+}
 
-        function watchReset(){
+function watchReset(){
             clearInterval(timer);
             [seconds,minutes,hours]=[0,0,0];
             displayTime.innerHTML="00:00:00"
-        }
+}
 
-        document.getElementById("lapRecord").innerHTML= "";
+document.getElementById("lapRecord").innerHTML= "";
 
        
-        function lap(){
-            // lapNow= h+":"+ m +":"+ s;
-            let temp= getElementById("lapRecord")
+function lap(){
+           // lapNow= h+":"+ m +":"+ s;
+          
             lapNow=hours+":"+ minutes +":"+ seconds;
-          //lapButton.innerHTML=lapNow;
-            document.getElementById("lapRecord").innerHTML=document.getElementById("lapRecord").innerHTML +"<p>"+lapNow+"</p>";
-             //document.getElementById("laps").innerHTML=temp+<p>lapNow</p>;
-             
-        
-        }
+        //     let temp= getElementById("lapRecord")
+        //   lapRecord.innerHTML=lapNow+document.getElementById("lapRecord");
+          //lapRecord=lapNow;
+         
+          //laps.innerHTML=lapNow+document.getElementById("lapRecord");
+          laps.innerHTML=lapNow;
+     
+            //document.getElementById("lapRecord").innerHTML=document.getElementById("lapRecord").innerHTML +"<p>"+lapNow+"</p>";
+}
