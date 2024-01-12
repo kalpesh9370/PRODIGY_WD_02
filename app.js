@@ -5,9 +5,6 @@
         let playButton=document.getElementById("playButton");
         let lapButton=document.getElementById("lapBtn");
 
-        // playButton.onclick="watchStart()";
-
-       // playButton.addEventListener('click', watchStart())
 
         function stopWatch(){
 
@@ -49,15 +46,6 @@ document.getElementById("lapRecord").innerHTML= "";
 
        
 function lap(){
-           // lapNow= h+":"+ m +":"+ s;
-          
             lapNow=hours+":"+ minutes +":"+ seconds;
-        //     let temp= getElementById("lapRecord")
-        //   lapRecord.innerHTML=lapNow+document.getElementById("lapRecord");
-          //lapRecord=lapNow;
-         
-          //laps.innerHTML=lapNow+document.getElementById("lapRecord");
-          laps.innerHTML=lapNow;
-     
-            //document.getElementById("lapRecord").innerHTML=document.getElementById("lapRecord").innerHTML +"<p>"+lapNow+"</p>";
+             laps.innerHTML=lapNow;   
 }
